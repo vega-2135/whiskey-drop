@@ -2,14 +2,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.alert-container {
+/* Containers */
 
-}
+.alert-container {}
 
 .callout-container {
     height: 100vh;
 
-    background: url(../assets/images/whiskey-background.jpg) no-repeat bottom right fixed;
+    background: url('../assets/images/whiskey-background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -22,7 +22,6 @@ body {
     position: relative;
 }
 
-
 .opaque-overlay {
     position: absolute;
     top: 0;
@@ -31,6 +30,10 @@ body {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.quotes-container {}
+
+.features-container {}
 
 /* Block dividers */
 
@@ -72,10 +75,25 @@ body {
     font-style: italic;
     color: #d0d0d0;
 }
-.quotes-container {
 
+/* Buttons */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
 }
 
-.features-container {
+.btn--red {
+    color: white;
+    background-color: #f05f40;
+    border-color: #f05f40;
+}
 
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #df4929;
+    border-color: #df4929;
 }
